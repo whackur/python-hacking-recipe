@@ -1,0 +1,30 @@
+from selenium import webdriver
+from bs4 import BeautifulSoup
+from time import sleep
+
+url = "https://shop.hakhub.net"
+
+
+def load_driver():
+    options = webdriver.ChromeOptions()
+    options.add_argument("window-size=1920,1080")  # 창의 크기
+    options.add_argument("lang=ko_KR")  # 한국어
+    return webdriver.Chrome("drivers/chromedriver", options=options)
+
+
+def get_item_info():
+    driver.get(url)
+    driver.implicitly_wait(3)
+    html = driver.page_source
+    soup = BeautifulSoup(html, "html.parser")
+    items = soup.find_all("li", {"class": "product"})
+    for index, item in enumerate(items):
+        print("================")
+        print(f"{index+1}번째 상품", end="")
+        print(item.text)
+    driver.close()
+
+
+if __name__ == "__main__":
+    driver = load_driver()
+    get_item_info()

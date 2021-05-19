@@ -1,0 +1,18 @@
+{
+    "id": "user_id",
+    "author": "관리자",
+    "title": "공지사항입니다.",
+    "content": "내용입니다.",
+    "reply": [
+        {
+            "id": "reply_1",
+            "author": "댓글작성자1",
+            "content": "댓글 내용1"
+        },
+        {
+            "id": "reply_2",
+            "author": "댓글작성자2",
+            "content": "댓글 내용2"
+        }
+    ]
+}
