@@ -73,7 +73,7 @@ def initial_fight(home_monster, away_monster):
     string_2_attack = ""
     for index, value in enumerate(attrs):
         if home_monster.types == value:
-            if home_monster.types == value:
+            if away_monster.types == value:
                 string_1_attack = "\n효과는 평범했다."
                 string_2_attack = "\n효과는 평범했다."
 
