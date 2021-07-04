@@ -38,11 +38,16 @@ customer02 // customer02!!
 ## BWAPP
 OWASP top 10 2013 / PHP 기반의 취약점 실습 페이지입니다.
 
-테스트 계정은 bee / bug 로 로그인하실 수 있습니다.
+아래 테스트 계정으로 로그인하실 수 있습니다.
+```
+bee // bug
+```
+
 [https://bwapp.hakhub.net](https://bwapp.hakhub.net)
 
 ## Juice Shop
 OWASP Top 10 2017 / Node.js 기반의 취약점 실습 페이지입니다.
+
 [https://js.hakhub.net](https://js.hakhub.net)
 
 
