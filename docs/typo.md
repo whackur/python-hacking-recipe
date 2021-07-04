@@ -12,12 +12,16 @@
 ![doc_03.png](doc_03.png)
    
 유저 계정은 로그온 한 윈도우 사용자 계정을 직접 확인해야 합니다. 아나콘다도 해당 경로에 제대로 설치되어 있어야 합니다.
+
 5. VSCode를 재시작 한 후 소스코드 상에서 우클릭 - Run Python File in Terminal 을 선택하면 아나콘다 환경이 잘 작동하는 것을 볼 수 있습니다. 
 
 
 
 - TabNine Autocomplete AI 확장 프로그램 업데이트로 인한 이름 변경
   -> Tabnine AI Code Completion for all major... (TabNine) 
+
+## p.107
+[코드 3-27] 1번째 줄 mport random -> import random
 
 ## p.110
 상단에 코드 [utils/display.py] 라고 쓰여진 부분 -> [utils/display_test.py]
