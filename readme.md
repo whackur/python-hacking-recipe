@@ -13,15 +13,37 @@
 크롤링, 실습 대상 웹 페이지 제공
 
 
+# 크롤링 실습 웹사이트
+아래 웹 사이트에서 크롤링과 자동화, 웹해킹 등을 실습하실 수 있습니다.
+
+크롤링이나 웹해킹이 아닌 DDoS 류의 공격은 금지합니다.
+
+또한 아래 명시된 3개의 서브 도메인 웹페이지를 제외한 모든 곳은 공격을 금지합니다.
+
 
 ## WordPress Based
-https://shop.hakhub.net
+워드프레스, PHP 기반의 쇼핑몰입니다.
+
+아래 테스트 계정으로 로그인하실 수 있습니다.
+```
+customer01 // customer01!!
+customer02 // customer02!!
+```
+
+
+
+[https://shop.hakhub.net](https://shop.hakhub.net)
 
 
 ## BWAPP
-OWASP top 10 2013 / PHP Based
+OWASP top 10 2013 / PHP 기반의 취약점 실습 페이지입니다.
 
-https://bwapp.hakhub.net
+테스트 계정은 bee / bug 로 로그인하실 수 있습니다.
+[https://bwapp.hakhub.net](https://bwapp.hakhub.net)
+
+## Juice Shop
+OWASP Top 10 2017 / Node.js 기반의 취약점 실습 페이지입니다.
+[https://js.hakhub.net](https://js.hakhub.net)
 
 
 # 내용
