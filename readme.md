@@ -8,10 +8,6 @@
 [출판사 레포지토리](https://github.com/bjpublic/pythonhacking) 에서도 받으실 수 있습니다.
 
 
-# 이벤트 !!
-[이벤트 내용 보기](docs/event.md)
-
-
 # 특징
 구현 위주이나 원리를 자세하게 설명
 

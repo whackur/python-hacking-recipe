@@ -7,7 +7,7 @@ directory_list_path = "./wp-directory.txt"
 target_domain = "https://shop.hakhub.net"
 
 
-async def asnyc_func(directory_list):
+async def async_func(directory_list):
     conn = aiohttp.TCPConnector(limit_per_host=10)
     async with aiohttp.ClientSession(connector=conn) as s:
         futures = [
@@ -44,6 +44,6 @@ async def find_directory(s, sub_directory_path):
 if __name__ == "__main__":
     begin = time()
     directory_list = open(directory_list_path).read().splitlines()
-    asyncio.run(asnyc_func(directory_list))
+    asyncio.run(async_func(directory_list))
     end = time()
     print(f"실행 시간: {end - begin}")

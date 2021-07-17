@@ -32,3 +32,6 @@
         if home_monster.types == value:
             if away_monster.types == value:
 ```
+
+## 함수명
+실행에 이상없으나 5-10, 6-2, 6-6 예제에 asnyc_func 함수명을 async_func 로 수정

@@ -24,7 +24,7 @@ def get_product_urls(urls):
     return product_urls
 
 
-async def asnyc_func(urls):
+async def async_func(urls):
     # 같은 TCP Session 사용
     conn = aiohttp.TCPConnector(limit_per_host=10)
     async with aiohttp.ClientSession(connector=conn) as s:
@@ -62,6 +62,6 @@ async def show_product_review(s, url):
 if __name__ == "__main__":
     begin = time()
     product_urls = get_product_urls(page_urls)
-    asyncio.run(asnyc_func(product_urls))
+    asyncio.run(async_func(product_urls))
     end = time()
     print(f"실행 시간: {end - begin}")
