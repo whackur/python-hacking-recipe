@@ -20,6 +20,9 @@
 - TabNine Autocomplete AI 확장 프로그램 업데이트로 인한 이름 변경
   -> Tabnine AI Code Completion for all major... (TabNine) 
 
+## p.41
+Shell 이라고 검색해도 나오지 않는다면 Terminal 키워드로 검색
+
 ## p.107
 [코드 3-27] 1번째 줄 mport random -> import random
 
