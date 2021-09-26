@@ -23,6 +23,10 @@
 ## p.41
 Shell 이라고 검색해도 나오지 않는다면 Terminal 키워드로 검색
 
+![doc_04.png](doc_04.png)
+터미널: 기본 프로필 선택
+
+
 ## p.107
 [코드 3-27] 1번째 줄 mport random -> import random
 
@@ -35,6 +39,9 @@ Shell 이라고 검색해도 나오지 않는다면 Terminal 키워드로 검색
         if home_monster.types == value:
             if away_monster.types == value:
 ```
+
+## p.146
+ip_headers[0]은 1byte(8bytes) -> ip_headers[0]은 1byte(8bits)  
 
 ## 함수명
 실행에 이상없으나 5-10, 6-2, 6-6 예제에 asnyc_func 함수명을 async_func 로 수정
