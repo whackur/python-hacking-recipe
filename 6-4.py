@@ -20,7 +20,7 @@ def discover_directory(domain):
     except requests.exceptions.ConnectionError:
         pass
     except Exception as e:
-        print(f"Requets error: {e}")
+        print(f"Request error: {e}")
     for link in BeautifulSoup(
         content, features="html.parser", parse_only=SoupStrainer("a")
     ):

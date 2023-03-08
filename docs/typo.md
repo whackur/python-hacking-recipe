@@ -69,5 +69,12 @@ Shell 이라고 검색해도 나오지 않는다면 Terminal 키워드로 검색
 ## p.146
 ip_headers[0]은 1byte(8bytes) -> ip_headers[0]은 1byte(8bits)  
 
+## p.266
+소스코드 6-4.py 23번째 줄 오타 수정
+requets -> request
+```python
+print(f"requets error: {e}")
+```
+
 ## 함수명
 실행에 이상없으나 5-10, 6-2, 6-6 예제에 asnyc_func 함수명을 async_func 로 수정
