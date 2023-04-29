@@ -11,6 +11,7 @@ url = "https://shop.hakhub.net"
 
 def load_driver():
     options = webdriver.ChromeOptions()
+    options.add_experimental_option("excludeSwitches", ["enable-logging"])  # 시스템에 부착된 장치 오류 제거
     options.add_argument("window-size=1920,1080")  # 창의 크기
     options.add_argument("lang=ko_KR")  # 한국어
     return webdriver.Chrome(
