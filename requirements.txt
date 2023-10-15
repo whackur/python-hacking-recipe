@@ -1,0 +1,12 @@
+aiohttp
+aiodns
+black
+cchardet
+fastapi
+pillow
+beautifulsoup4
+python-whois
+colorama
+requests
+selenium==4.14.0
+uvicorn
