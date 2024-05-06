@@ -3,16 +3,17 @@
 ---
 > 파이썬의 버전 업그레이드 또는 사용하는 라이브러리의 버전 업데이트 등으로 인한 변경내용이 있을 수 있습니다.
 >
-> 가능하면 힘닿는데 까지 소스코드를 최대한 잘 돌아가도록 빠르게 변경하여 유지할 것입니다.
+> 가능하면 소스코드를 최대한 잘 돌아가도록 빠르게 변경하여 유지할 것입니다.
 > 
 > 문의 내용 또는 오탈자나 버그 등의 제보, 사이트 접속 불가는 whackur@gmail.com 메일로 부탁드립니다.
 
-## Selenium 라이브러리 변경점 업데이트 (2023.10.16. v4.14.0)
+## Selenium 라이브러리 변경점 업데이트 (2024.05.06. v4.20.0)
 - 최신버전의 Selenium 사용 방법이 변경되었습니다.
 - driver 생성하는 부분이 간편해졌습니다.
 - 더 이상 크롬 드라이브 파일을 따로이 받지 않고도 실행 가능하게 변경되었습니다.
 - 더 이상 시스템에 부착된 장치 오류를 출력하지 않습니다.
 - find_element(s) 와 같은 함수들의 사용방법이 변경되었습니다.
+- python 프로세스가 종료될 시 브라우저도 같이 종료됩니다. 종료를 막으려면 경우에 따라 코드의 마지막에 input() 함수를 넣어 주세요. 이후 강제 종료는 ctrl + c 키를 누릅니다.
 
 아래 명령어로 패키지를 설치하신 후 변경된 소스코드를 적용해주세요.
 ```shell
@@ -38,8 +39,27 @@ pip install -r requirements.txt
 ![doc_01.png](doc_01.png)
 3. 우측 상단의 설정 열기(JSON) 버튼
 ![doc_02.png](doc_02.png)을 누릅니다.
-4. 아래와 같이 "python.pythonPath": "C:\\Users\\[유저 계정]\\anaconda3\\python.exe" 경로를 추가합니다.
+4. 윈도우 사용자는 아래와 같이 "python.pythonPath": "C:\\Users\\[유저 계정]\\anaconda3\\python.exe" 경로를 추가합니다.
 ![doc_03.png](doc_03.png)
+
+
+- 만약 리눅스나 맥의 경우에는 아래에서 해당하는 명령어를 넣으시면 됩니다. 
+- JSON 파일 수정 시 마지막 Object 끝에는 콤마 (,)가 들어가지 않는 것에 주의하여 파일을 작성하고 저장하세요.
+
+```shell
+{
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "C:\\Path\\To\\Your\\Python"
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "/path/to/your/python"
+    },
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "/path/to/your/python"
+    }
+}
+
+```
    
 유저 계정은 로그온 한 윈도우 사용자 계정을 직접 확인해야 합니다. 아나콘다도 해당 경로에 제대로 설치되어 있어야 합니다.
 
@@ -48,7 +68,7 @@ pip install -r requirements.txt
 
 
 - TabNine Autocomplete AI 확장 프로그램 업데이트로 인한 이름 변경
-  -> Tabnine AI Code Completion for all major... (TabNine) 
+  -> Tabnine AI Code Autocomplete... (TabNine) 
 
 ## p.41
 Shell 이라고 검색해도 나오지 않는다면 Terminal 키워드로 검색
