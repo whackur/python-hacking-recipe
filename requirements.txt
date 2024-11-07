@@ -4,6 +4,7 @@ black
 fastapi
 pillow
 beautifulsoup4
+pythonping
 python-whois
 colorama
 requests
