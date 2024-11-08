@@ -1,4 +1,5 @@
 import socket
+import sys
 from time import time
 import asyncio
 from functools import partial
@@ -43,6 +44,8 @@ if __name__ == "__main__":
     begin = time()
     print(f"Target Address: {scan_target}")
     print(f"Target Ports: {ports}")
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     loop = asyncio.get_event_loop()
     loop.run_until_complete(async_func())
     loop.close()

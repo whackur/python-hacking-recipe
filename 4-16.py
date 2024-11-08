@@ -1,3 +1,4 @@
+import sys
 from time import time
 import asyncio
 from pythonping import ping
@@ -36,6 +37,8 @@ async def do_ping(ip):
 
 if __name__ == "__main__":
     begin = time()
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     loop = asyncio.get_event_loop()
     loop.run_until_complete(async_func())
     loop.close()

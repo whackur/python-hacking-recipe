@@ -1,3 +1,4 @@
+import sys
 from time import time
 import asyncio
 import aiohttp  # pip install aiohttp aiodns cchardet
@@ -43,6 +44,8 @@ async def find_directory(s, sub_directory_path):
 
 if __name__ == "__main__":
     begin = time()
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     directory_list = open(directory_list_path).read().splitlines()
     asyncio.run(async_func(directory_list))
     end = time()

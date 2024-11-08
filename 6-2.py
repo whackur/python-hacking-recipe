@@ -1,3 +1,4 @@
+import sys
 from time import time
 import asyncio
 import aiohttp  # pip install aiohttp aiodns cchardet
@@ -43,6 +44,8 @@ async def discover_url(s, domain):
 if __name__ == "__main__":
     begin = time()
     subdomain_words = open(wordlist_path).read().splitlines()
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     asyncio.run(async_func(subdomain_words))
     end = time()
     print(f"실행 시간: {end - begin}")

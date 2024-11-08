@@ -1,3 +1,4 @@
+import sys
 from time import time
 import asyncio
 from pythonping import ping
@@ -38,6 +39,8 @@ async def do_ping(ip):
 
 if __name__ == "__main__":
     begin = time()
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     asyncio.run(async_func())
     end = time()
     print(f"실행 시간: {end - begin}")

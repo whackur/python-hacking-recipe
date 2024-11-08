@@ -7,7 +7,18 @@
 > 
 > 문의 내용 또는 오탈자나 버그 등의 제보, 사이트 접속 불가는 whackur@gmail.com 메일로 부탁드립니다.
 
-## Selenium 라이브러리 변경점 업데이트 (2024.11.07. v4.26.1)
+
+## asyncio.set_event_loop_poly 추가 (2024.11.08)
+- asyncio 사용 시 윈도우에서 발생하던 NotImplementedError 해결
+- https://github.com/aio-libs/aiodns/issues/86
+- asyncio 사용 전 아래 코드 추가
+```python
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+```
+
+
+## Selenium 라이브러리 변경점 업데이트 (2024.11.08. v4.26.1)
 - 최신버전의 Selenium 사용 방법이 변경되었습니다.
 - driver 생성하는 부분이 간편해졌습니다.
 - 더 이상 크롬 드라이브 파일을 따로이 받지 않고도 실행 가능하게 변경되었습니다.
