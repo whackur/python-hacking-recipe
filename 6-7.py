@@ -1,7 +1,10 @@
 # pip install --upgrade pip
 import requests
+from urllib3.exceptions import InsecureRequestWarning
 from urllib.parse import urljoin, urlencode
 from bs4 import BeautifulSoup
+
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 from pprint import pprint
 
 from selenium import webdriver

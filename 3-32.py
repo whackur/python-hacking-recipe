@@ -47,11 +47,23 @@ class Monster:
 
 def create_monster(monster):
     if monster == "화끈몬":
-        return Monster("화끈몬", "불", ["불꽃뿜기", "머리박치기", "불꽃펀치"], {"공격력": 4, "방어력": 2})
+        return Monster(
+            "화끈몬",
+            "불",
+            ["불꽃뿜기", "머리박치기", "불꽃펀치"],
+            {"공격력": 4, "방어력": 2},
+        )
     elif monster == "축축몬":
-        return Monster("축축몬", "물", ["방울빔", "태클", "몸통박치기"], {"공격력": 3, "방어력": 3})
+        return Monster(
+            "축축몬", "물", ["방울빔", "태클", "몸통박치기"], {"공격력": 3, "방어력": 3}
+        )
     elif monster == "수풀몬":
-        return Monster("수풀몬", "풀", ["덩쿨채찍", "태클", "잎사귀날리기"], {"공격력": 2, "방어력": 4})
+        return Monster(
+            "수풀몬",
+            "풀",
+            ["덩쿨채찍", "태클", "잎사귀날리기"],
+            {"공격력": 2, "방어력": 4},
+        )
 
 
 def initial_fight(home_monster, away_monster):
